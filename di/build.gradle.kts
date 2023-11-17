@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.marcelo.di"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
@@ -38,6 +38,7 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.navigation.common.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

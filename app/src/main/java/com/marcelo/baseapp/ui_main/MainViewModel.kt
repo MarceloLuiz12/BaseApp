@@ -1,10 +1,10 @@
-package com.havan.havanconecta.ui
+package com.marcelo.baseapp.ui_main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.NavHostController
-import com.havan.utils.NavigationCommand
-import com.havan.utils.NavigationManager
+import com.marcelo.di.utils.NavigationCommand
+import com.marcelo.di.utils.NavigationManager
 import kotlinx.coroutines.launch
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject

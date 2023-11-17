@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.marcelo.data_local"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24

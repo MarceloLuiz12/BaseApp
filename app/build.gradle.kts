@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.marcelo.baseapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.marcelo.baseapp"
@@ -68,6 +68,7 @@ dependencies {
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
     implementation(libs.bundles.koinDependences)
+    implementation(libs.navigation)
 
     implementation(project(":base_ui"))
     implementation(project(":di"))

@@ -1,15 +1,14 @@
-package com.havan.di
+package com.marcelo.di.modules
 
-import com.havan.feature_auth.login.LoginNavigation
-import com.havan.navigation.LoginNavigationImpl
-import com.havan.utils.NavigationManager
+import com.marcelo.di.navigation.BaseNavigation
+import com.marcelo.di.navigation.NavigationImpl
+import com.marcelo.di.utils.NavigationManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import org.koin.dsl.module
 
 val navigationModule = module {
-
     single {
         NavigationManager(
             CoroutineScope(
@@ -18,7 +17,7 @@ val navigationModule = module {
         )
     }
 
-    single<LoginNavigation> {
-        LoginNavigationImpl(get())
+    single<BaseNavigation> {
+        NavigationImpl(get())
     }
 }

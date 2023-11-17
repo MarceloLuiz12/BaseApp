@@ -11,6 +11,7 @@ compose-bom = "2023.03.00"
 appcompat = "1.6.1"
 material = "1.10.0"
 koinVersion = "3.4.0"
+navigationVersion = "2.5.3"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,11 +29,13 @@ ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationVersion" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 koinCore = {group = "io.insert-koin", name = "koin-core", version.ref = "koinVersion"}
 koinAndroid = {group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion"}
 koinCompose = {group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinVersion"}
 koinTest = {group = "io.insert-koin", name = "koin-test", version.ref = "koinVersion"}
+androidx-navigation-common-ktx = { group = "androidx.navigation", name = "navigation-common-ktx", version = "2.7.5" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
@@ -41,4 +44,3 @@ com-android-library = { id = "com.android.library", version.ref = "agp" }
 
 [bundles]
 koinDependences = ["koinCore", "koinAndroid"]
-composeDependecies = ["ui", "ui-graphics", "ui-tooling", "ui-tooling-preview", "ui-test-manifest", "ui-test-junit4", "material3"]
